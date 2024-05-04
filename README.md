@@ -16,7 +16,8 @@ Angular (`v17`)
 - Open Git Bash and type `git clone https://github.com/vietanh6897/task-manager-app.git`
 - Open root folder by IDE
 - Open new terminal
-- Run `npm install` then type `npm start`
+- Run `npm install` then type `npm start` or `ng serve`
+- Navigate to `http://localhost:4200/`
 
 # Notes
 
