@@ -1,0 +1,58 @@
+<form class="flex-container" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="flex-container">
+      <label for="title">Title <span style="color: red">*</span></label>
+      <input
+        type="text"
+        id="title"
+        placeholder="Add new task..."
+        formControlName="title"
+      />
+      <div
+        *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched"
+      >
+        <div class="error-txt">Title is required.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="flex-container">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        rows="4"
+        formControlName="description"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="flex-container">
+      <label for="dueDate">Due Date</label>
+      <input
+        type="date"
+        id="dueDate"
+        formControlName="dueDate"
+        [min]="today | date : 'yyyy-MM-dd'"
+      />
+    </div>
+    <div class="flex-container">
+      <label for="priority">Priority</label>
+      <select id="priority" formControlName="priority">
+        <option [value]="taskPriority.lOW">
+          {{ taskPriority.lOW | titlecase }}
+        </option>
+        <option [value]="taskPriority.NORMAL">
+          {{ taskPriority.NORMAL | titlecase }}
+        </option>
+        <option [value]="taskPriority.HIGH">
+          {{ taskPriority.HIGH | titlecase }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="taskForm.invalid">
+    {{ taskForm.get("id")?.value ? "Update" : "Add" }}
+  </button>
+</form>

@@ -1,27 +1,23 @@
-# TaskManagerApp
+# Table of Contents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+- Version
+- Installation
+- Notes
 
-## Development server
+# Version
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[`version that I used in project`]
+Node.js (`v20.11.0`)
+npm (`10.2.4`)
+Angular (`v17`)
 
-## Code scaffolding
+# Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Open Git Bash and type `git clone https://github.com/vietanh6897/task-manager-app.git`
+- Open root folder by IDE
+- Open new terminal
+- Run `npm install` then type `npm start`
 
-## Build
+# Notes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[I'm not able to access mockup design link `https://wireframepro.mockflow.com/view/Mdab887a4c13f1076aad51db6687a2c8e15935390761 38#/page/3d47feb9951d457bbdc7e64b49f9f904 `. So the layout might not match 100% as you expected]
